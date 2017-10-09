@@ -1,0 +1,70 @@
+html, body {
+  height: 100%;
+  margin:0;
+  padding:0;
+  font-family: 'Lato';
+  background-color: #f2f2f7;
+}
+
+.container {
+  min-height: 100%;
+  margin-top:-2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePic {
+  display: block;
+  margin: 30px;
+  max-height: 300px;
+  width: auto;
+}
+
+h1 {
+  line-height: 0.3em;
+  color: #282e6b;
+}
+
+h2 {
+  color:#888;
+  font-style: italic;
+  font-weight: 100;
+}
+
+p{
+  width: 60ch;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  margin-right: 1em;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #282e6b;
+}
+
+@media (max-width: 950px) {
+    .container {
+      flex-flow: column;
+    }
+
+    .content {
+      padding:0 2.5em 0 2.5em;
+
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    p{
+      width: auto;
+      line-height: 1.5em;
+      display:flex;
+      text-align: center;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+    }
+}
